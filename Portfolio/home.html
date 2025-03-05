@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Portfolio</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#certificates" class="nav__link">Certificates</a></li>
+                    <li><a href="#resume" class="nav__link">Resume</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home section" id="home">
+        <div class="home__cover">
+            <img src="images/cover pic.jpg" alt="Cover Photo">
+            <div class="home__img">
+                <img src="images/profile pic.jpg" alt="Profile Image">
+            </div>
+        </div>
+        <div class="home__container container">
+            <div class="home__content">
+                <h1 class="home__title" data-aos="fade-up">
+                    Hi, I'm <span class="gradient-text">Yash Parab</span>
+                </h1>
+                <h3 class="home__subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Web Developer
+                </h3>
+                <p class="home__description" data-aos="fade-up" data-aos-delay="200">
+                    Passionate about creating beautiful and functional web experiences
+                </p>
+                <div class="home__buttons" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#contact" class="button">Contact Me</a>
+                    <a href="#projects" class="button button--ghost">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <h2 class="section__title" data-aos="fade-down">About Me</h2>
+        <div class="about__container container grid">
+            <div class="about__content" data-aos="fade-right">
+                <p>Hi, I'm Yash, a front-end developer with 2 years of experience
+                     crafting beautiful, user-friendly websites and applications. 
+                     I specialize in HTML, CSS, JavaScript, and modern front-end frameworks
+                      like React.</p>
+                
+                <p>I'm passionate about creating responsive, accessible, and intuitive
+                     websites that deliver a great user experience. I believe in clean,
+                      maintainable code and always strive to stay up to date with the latest
+                    trends and technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <h2 class="section__title" data-aos="fade-down">Skills</h2>
+        <div class="skills__container container grid">
+            <div class="skills__content">
+                <div class="skills__grid">
+                    <!-- HTML -->
+                    <div class="skills__item" data-aos="zoom-in">
+                        <div class="skill__pie">
+                            <svg class="skill__pie-svg" viewBox="0 0 100 100">
+                                <circle class="skill__pie-background" cx="50" cy="50" r="45"/>
+                                <circle class="skill__pie-circle" cx="50" cy="50" r="45" data-value="90"/>
+                            </svg>
+                            <span class="skill__pie-number">90%</span>
+                        </div>
+                        <h3 class="skill__title">HTML</h3>
+                    </div>
+                    
+                    <!-- CSS -->
+                    <div class="skills__item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="skill__pie">
+                            <svg class="skill__pie-svg" viewBox="0 0 100 100">
+                                <circle class="skill__pie-background" cx="50" cy="50" r="45"/>
+                                <circle class="skill__pie-circle" cx="50" cy="50" r="45" data-value="85"/>
+                            </svg>
+                            <span class="skill__pie-number">85%</span>
+                        </div>
+                        <h3 class="skill__title">CSS</h3>
+                    </div>
+                    
+                    <!-- JavaScript -->
+                    <div class="skills__item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="skill__pie">
+                            <svg class="skill__pie-svg" viewBox="0 0 100 100">
+                                <circle class="skill__pie-background" cx="50" cy="50" r="45"/>
+                                <circle class="skill__pie-circle" cx="50" cy="50" r="45" data-value="80"/>
+                            </svg>
+                            <span class="skill__pie-number">80%</span>
+                        </div>
+                        <h3 class="skill__title">JavaScript</h3>
+                    </div>
+                    
+                    <!-- React -->
+                    <div class="skills__item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="skill__pie">
+                            <svg class="skill__pie-svg" viewBox="0 0 100 100">
+                                <circle class="skill__pie-background" cx="50" cy="50" r="45"/>
+                                <circle class="skill__pie-circle" cx="50" cy="50" r="45" data-value="75"/>
+                            </svg>
+                            <span class="skill__pie-number">75%</span>
+                        </div>
+                        <h3 class="skill__title">React</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <h2 class="section__title" data-aos="fade-down">Projects</h2>
+        <div class="projects__container container grid">
+            <!-- Project 1 -->
+            <div class="project__card" data-aos="fade-up">
+                <div class="project__video-container">
+                    <video class="project__video" controls>
+                        <source src="videos/landing page.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>Calculator</h3>
+                <p>Description of your first project. Explain the key features and technologies used.</p>
+                <div class="project__links">
+                    <a href="videos/landing page.mp4" target="_blank" class="button">Open Video</a>
+                </div>
+                <div class="project__code-buttons">
+                    <a href="codes/calculator/html.txt" target="_blank" class="code-button">HTML</a>
+                    <a href="codes/calculator/css.txt" target="_blank" class="code-button">CSS</a>
+                    <a href="codes/calculator/js.txt" target="_blank" class="code-button">JS</a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project__card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project__video-container">
+                    <video class="project__video" controls>
+                        <source src="videos/landing page.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>Landing Page</h3>
+                <p>Description of your second project. Highlight the main functionalities.</p>
+                <div class="project__links">
+                    <a href="videos/landing page.mp4" target="_blank" class="button">Open Video</a>
+                </div>
+                <div class="project__code-buttons">
+                    <a href="codes/landing page/landhtml.txt" target="_blank" class="code-button">HTML</a>
+                    <a href="codes/landing page/css.txt" target="_blank" class="code-button">CSS</a>
+                    <a href="codes/landing page/mainjs.txt" target="_blank" class="code-button">JS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates section" id="certificates">
+        <h2 class="section__title" data-aos="fade-down">Certificates</h2>
+        <div class="certificates__container container grid">
+            <!-- Certificate 1 -->
+            <div class="certificate__card" data-aos="fade-up">
+                <div class="certificate__content">
+                    <div class="certificate__pdf">
+                        <object 
+                            data="pdf/YASH-PARAB-Participant-Certificate.pdf" 
+                            type="application/pdf" 
+                            width="100%" 
+                            height="200">
+                            <p>Unable to display PDF. 
+                                <a href="pdf/YASH-PARAB-Participant-Certificate.pdf" target="_blank">Open PDF</a>
+                            </p>
+                        </object>
+                    </div>
+                    <h3 class="certificate__title">Bootstrap</h3>
+                    <p class="certificate__description">Completed Bootstrap training</p>
+                    <div class="certificate__data">
+                        <span class="certificate__issuer">
+                            <i class="ri-building-line"></i> Udemy
+                        </span>
+                        <span class="certificate__date">
+                            <i class="ri-calendar-line"></i> 2024
+                        </span>
+                    </div>
+                    <a href="pdf/YASH-PARAB-Participant-Certificate.pdf" target="_blank" class="certificate__button">
+                        View Certificate <i class="ri-external-link-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="certificate__card" data-aos="fade-up" data-aos-delay="100">
+                <div class="certificate__content">
+                    <div class="certificate__pdf">
+                        <object 
+                            data="pdf/Mongo DB Certificate.pdf" 
+                            type="application/pdf" 
+                            width="100%" 
+                            height="200">
+                            <p>Unable to display PDF. 
+                                <a href="pdf/Mongo DB Certificate.pdf" target="_blank">Open PDF</a>
+                            </p>
+                        </object>
+                    </div>
+                    <h3 class="certificate__title">MongoDB</h3>
+                    <p class="certificate__description">Advanced JavaScript Concepts</p>
+                    <div class="certificate__data">
+                        <span class="certificate__issuer">
+                            <i class="ri-building-line"></i> FreeCodeCamp
+                        </span>
+                        <span class="certificate__date">
+                            <i class="ri-calendar-line"></i> 2023
+                        </span>
+                    </div>
+                    <a href="pdf/Mongo DB Certificate.pdf" target="_blank" class="certificate__button">
+                        View Certificate <i class="ri-external-link-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="certificate__card" data-aos="fade-up" data-aos-delay="200">
+                <div class="certificate__content">
+                    <div class="certificate__pdf">
+                        <object 
+                            data="pdf/workato certificate.pdf" 
+                            type="application/pdf" 
+                            width="100%" 
+                            height="200">
+                            <p>Unable to display PDF. 
+                                <a href="pdf/workato certificate.pdf" target="_blank">Open PDF</a>
+                            </p>
+                        </object>
+                    </div>
+                    <h3 class="certificate__title">Workato Pro-1</h3>
+                    <p class="certificate__description"> workato basics hand-on experience</p>
+                    <div class="certificate__data">
+                        <span class="certificate__issuer">
+                            <i class="ri-building-line"></i> Coursera
+                        </span>
+                        <span class="certificate__date">
+                            <i class="ri-calendar-line"></i> 2023
+                        </span>
+                    </div>
+                    <a href="pdf/workato certificate.pdf" target="_blank" class="certificate__button">
+                        View Certificate <i class="ri-external-link-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume section" id="resume">
+        <h2 class="section__title" data-aos="fade-down">Resume</h2>
+        <div class="resume__container container grid">
+            <div class="resume__content" data-aos="fade-up">
+                <div class="resume__preview">
+                    <object 
+                        data="pdf/Yash Resume.pdf" 
+                        type="application/pdf" 
+                        width="100%" 
+                        height="600px">
+                        <p>Unable to display PDF file. 
+                            <a href="pdf/Yash Resume.pdf" target="_blank">Download</a> instead.
+                        </p>
+                    </object>
+                </div>
+                <div class="resume__actions">
+                    <a href="pdf/Yash Resume.pdf" target="_blank" class="button">
+                        <i class="ri-eye-line"></i> Open Full Screen
+                    </a>
+                    <a href="pdf/Yash Resume.pdf" download class="button button--ghost">
+                        <i class="ri-download-line"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <h2 class="section__title" data-aos="fade-down">Contact Me</h2>
+        <div class="contact__container container grid">
+            <form class="contact__form" data-aos="fade-up">
+                <div class="form__group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form__group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__social">
+                <a href="#" class="footer__social-link"><i class="ri-github-fill"></i></a>
+                <a href="#" class="footer__social-link"><i class="ri-linkedin-fill"></i></a>
+                <a href="#" class="footer__social-link"><i class="ri-twitter-fill"></i></a>
+            </div>
+            <p class="footer__copy">© 2024 Your Name. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
