@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers - Nature Photography</title>
+    <link rel="stylesheet" href="shared-pages.css">
+    <style>
+        .offer-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .special-offer {
+            background: linear-gradient(135deg, rgba(179, 37, 87, 0.1), rgba(179, 37, 87, 0.3));
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid #b32557;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-badge {
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: #b32557;
+            color: white;
+            padding: 8px 40px;
+            transform: rotate(45deg);
+            font-size: 0.9rem;
+        }
+
+        .countdown {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 1.5rem;
+        }
+
+        .countdown span {
+            color: #b32557;
+            font-weight: bold;
+        }
+
+        .book-now {
+            display: inline-block;
+            background: #b32557;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .book-now:hover {
+            background: #8e1d44;
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature i {
+            font-size: 2rem;
+            color: #b32557;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-page">
+        <a href="index.html" class="back-to-home">← Back to Home</a>
+        
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Special Offers</h1>
+            </div>
+        </section>
+
+        <div class="offer-container">
+            <div class="special-offer">
+                <div class="offer-badge">LIMITED TIME</div>
+                <h2>Summer Photography Package</h2>
+                <p>Book now and save 30% on our premium photography packages!</p>
+                <div class="countdown">
+                    Offer ends in: <span id="countdown-timer">5 days</span>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <i class="ri-camera-lens-fill"></i>
+                        <h3>Professional Equipment</h3>
+                        <p>High-end cameras and lenses for stunning shots</p>
+                    </div>
+                    <div class="feature">
+                        <i class="ri-gallery-fill"></i>
+                        <h3>Digital Gallery</h3>
+                        <p>Online gallery with downloadable images</p>
+                    </div>
+                    <div class="feature">
+                        <i class="ri-edit-fill"></i>
+                        <h3>Professional Editing</h3>
+                        <p>Advanced photo editing and retouching</p>
+                    </div>
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+
+            <div class="special-offer">
+                <h2>Wedding Photography Special</h2>
+                <p>Complete wedding photography package with 20% off!</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="ri-time-fill"></i>
+                        <h3>Full Day Coverage</h3>
+                        <p>From preparation to reception</p>
+                    </div>
+                    <div class="feature">
+                        <i class="ri-album-fill"></i>
+                        <h3>Premium Album</h3>
+                        <p>Handcrafted photo album included</p>
+                    </div>
+                    <div class="feature">
+                        <i class="ri-video-fill"></i>
+                        <h3>Highlight Video</h3>
+                        <p>5-minute highlight reel of your special day</p>
+                    </div>
+                </div>
+                <a href="#" class="book-now">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple countdown timer
+        function updateCountdown() {
+            const countdownElement = document.getElementById('countdown-timer');
+            let days = 5;
+            let hours = 0;
+            
+            setInterval(() => {
+                if (hours === 0) {
+                    days--;
+                    hours = 23;
+                } else {
+                    hours--;
+                }
+                
+                if (days >= 0) {
+                    countdownElement.textContent = `${days} days ${hours} hours`;
+                }
+            }, 3600000); // Update every hour
+        }
+
+        updateCountdown();
+    </script>
+</body>
+</html> 
